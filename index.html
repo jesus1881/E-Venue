@@ -13,12 +13,46 @@
 </head>
 <body>
   
+  <header>
+    <h1>Paw Match</h1>
+    
+<nav>
+  <ul>
+    <li>Adopt</li>
+    <li>Our Mission</li>
+    <li>Contact us</li>
+  </ul>
+</nav>
+  </header>
+<!-- modal for form-->
+<main>
+<form>
+<label for="name">Name</label>
+<input for="name" type="text" id="name">
+
+<label for="city">City</label>
+<input form="city" type="text" id="city">
+
+<label for="zip" id="zip">Zip code</label>
+  <input for="zip" id="zip" type="number" maxlength="5">
+
+  <label for="pet-type" >Pet Type</label>
+  <input for="pet-type" type="radio" id="dog">
+  <label for="dog">Dog</label>
+  <input for="pet-type" type="radio" id="cat">
+  <label for="cat">Cat</label>
+
+  <label for="age" id="age">Pet Age</label>
+  <input for="age" id="age" type="number">
+  <button type="submit">Find Pet</button>
+</form>
   
   <div id="main"></div>
   <div id="form"></div>
   <div id="pets"></div>
   <div id="map"></div>
-
+</main>
+<footer> </footer>
 
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/pets.js"></script>
