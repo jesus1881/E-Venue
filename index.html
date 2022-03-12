@@ -9,16 +9,88 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/reset.css"/>
-  <title> Paw Match</title>
-</head>
-<body>
+  <title> Event Match</title>
+  </head>
+
+  <body>
+  <!--navigation-->
+    <header>
+      <h1>Event Match</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Find Event</a>
+          </li>
+          <li>
+            <a href="">About us</a>
+          </li>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <!--hero-->
+    <section class="hero">
+      <!--call to action-->
+      <div>
+        <h2>Good memories are a click away.</h2>
+        <p>Check out what's going on around you.</p>
+      </div>
+      <div>
+        <h2>Find Your next event!</h2>
+        <p>Where to go... where to go...</p>
+        <form>
+          <label for="city">City</label>
+          <input form="city" type="text" id="city" class="">
   
-  
+          <label for="zip" id="zip">Zip code</label>
+          <input for="zip" id="zip" type="number" class="" maxlength="5">
+          
+          <p>Are you 21+?</p>
+          <span class="">
+            <input type="radio" name="age-confirm" id="age-yes">
+            <label for="age-yes">Yes</label>
+          </span>
+          <span class="">
+            <input type="radio" name="age-confirm" id="age-no">
+            <label for="age-no">No</label>
+          </span>
+          <br>
+          <label for="event-date">Pick a date:</label>
+          <input for="event-date" id="email" type="date" class="">
+          <button type="submit">Find Event</button>
+        </form>
+      </div>
+    </section>
+
+  <main>
+    <!--find/upcoming event section-->
+    <section id="event-list">
+      <div>
+      <h3>Here's whats going on around you.</h3>
+      </div>
+    </section>
+
+    <!--about us section-->
+    <section id="about-us">
+      <h3>Why we do it.</h3>
+
+    </section>
+    <!--contact  section-->
+    <section id="contact-us">
+      <h3>Something on your mind? Let us know.</h3>
+
+    </section>
+
   <div id="main"></div>
   <div id="form"></div>
   <div id="pets"></div>
   <div id="map"></div>
-
+  </main>
+  
+  <footer>&copy; 2022 Event Match Co. </footer>
 
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/pets.js"></script>
