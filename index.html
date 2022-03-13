@@ -7,95 +7,86 @@
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/reset.css"/>
-  <title> Event Match</title>
+  <title>E-Venue</title>
   </head>
 
   <body>
   <!--navigation-->
-    <header>
-      <h1>Event Match</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Find Event</a>
-          </li>
-          <li>
-            <a href="">About us</a>
-          </li>
-          <li>
-            <a href="">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+  <header id="nav-bar" class="mdc-top-app-bar mdc-top-app-bar--short ">
+    <div class="mdc-top-app-bar__row">
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+     <span  class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center">
+      <h1 id="title"class="mdc-top-app-bar__title">E-Venue</h1>
+     </span>
+      </div>
+  </header>
+<main class="mdc-top-app-bar--short-fixed-adjust">
   <!--hero-->
-    <section class="hero">
+  <section class="" id="hero">
+  <div id="form" class="mdc-card mdc-card--outlined ">
       <!--call to action-->
-      <div>
+      <div class="good-title mdc-card mdc-card__content">
         <h2>Good memories are a click away.</h2>
         <p>Check out what's going on around you.</p>
       </div>
-      <div>
+      <div class="mdc-card mdc-card__content">
         <h2>Find Your next event!</h2>
         <p>Where to go... where to go...</p>
-        <form>
+        <form class="">
           <label for="city">City</label>
-          <input form="city" type="text" id="city" class="">
-  
+          <input form="city" type="text" id="city" class="mdc-text-field mdc-text-field--filled">
           <label for="zip" id="zip">Zip code</label>
-          <input for="zip" id="zip" type="number" class="" maxlength="5">
-          
+          <input for="zip" id="zip" type="number" class="mdc-text-field mdc-text-field--filled" maxlength="5">
+          <div id="age-radio">
           <p>Are you 21+?</p>
-          <span class="">
+          <div id="radio-btns">
             <input type="radio" name="age-confirm" id="age-yes">
             <label for="age-yes">Yes</label>
-          </span>
-          <span class="">
-            <input type="radio" name="age-confirm" id="age-no">
+            <input class="" type="radio" name="age-confirm" id="age-no">
             <label for="age-no">No</label>
-          </span>
-          <br>
+          </div>
+          </div>
           <label for="event-date">Pick a date:</label>
-          <input for="event-date" id="email" type="date" class="">
-          <button type="submit">Find Event</button>
-        </form>
-      </div>
-    </section>
-
-  <main>
+          <input for="event-date" id="date" type="date"  class="mdc-text-field">
+          <div id="find-btn">
+          <button type="submit" class="mdc-button mdc-button--raised">Find Event</button>
+          </div>
+        </div>
+        </div>
+      </form>
+  </div>
+</section>
+</main>
+<div class="mdc-layout-grid">
     <!--find/upcoming event section-->
+    <div class=" mdc-layout-grid">
     <section id="event-list">
-      <div>
-      <h3>Here's whats going on around you.</h3>
+      <div class="mdc-layout-grid ">
+      <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
       </div>
     </section>
-
+    </div>
+  </div>
     <!--about us section-->
     <section id="about-us">
-      <h3>Why we do it.</h3>
+      <h3 class="mdc-list-group__subheader">Why we do it.</h3>
 
     </section>
     <!--contact  section-->
     <section id="contact-us">
-      <h3>Something on your mind? Let us know.</h3>
+      <h3 class="mdc-list-group__subheader">Something on your mind? Let us know.</h3>
 
     </section>
 
-  <div id="main"></div>
-  <div id="form"></div>
-  <div id="pets"></div>
-  <div id="map"></div>
-  </main>
-  
-  <footer>&copy; 2022 Event Match Co. </footer>
-
+    
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/events.js"></script>
   <script src="./assets/js/form.js"></script>
   <script src="./assets/js/main.js"></script>
+
+  <footer>&copy; 2022 Event Match Co. </footer>
 </body>
 </html>
