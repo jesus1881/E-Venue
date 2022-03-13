@@ -11,6 +11,8 @@
 
 @include icon-button.core-styles;
 
+@use "@material/textfield";
+
 main{  
     background-attachment: fixed;
     padding-bottom: 5%;
@@ -23,7 +25,7 @@ main{
 };
 
 
-#zip{
+.zip{
     font-size: 50px;
 }
 
@@ -33,17 +35,17 @@ h2{
     font-size: 40px;
 }
 
-#hero{
+.hero{
     display: flex;
     justify-content: center;
 }
 
-#title{
+.title{
     font-size: 30px;
     padding: 0 0 10px 5px;
 }
 
-#age-no{
+.age-no{
     size-adjust: 10px;
 }
 
@@ -53,25 +55,25 @@ footer{
     justify-content: right;
 }
 
-@use "@material/textfield";
 
-#zip, #city{
+
+.zip, .city{
    height: 25px; 
 }
 
-#age-radio{
+.age-radio{
     display: flex;
 }
 
-#radio-btns{
+.radio-btns{
     padding: 15px 0 0 15pxs;
 }
 
-#date{
+.date{
     height: 28px;
 }
 
-#find-btn{
+.find-btn{
     display: inline;
     padding-left: 5px;
     padding-bottom: 5px;

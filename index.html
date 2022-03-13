@@ -14,18 +14,18 @@
 
   <body>
   <!--navigation-->
-  <header id="nav-bar" class="mdc-top-app-bar mdc-top-app-bar--short ">
+  <header class="nav-bar mdc-top-app-bar mdc-top-app-bar--short ">
     <div class="mdc-top-app-bar__row">
       <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
      <span  class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center">
-      <h1 id="title"class="mdc-top-app-bar__title">E-Venue</h1>
+      <h1 class="title mdc-top-app-bar__title">E-Venue</h1>
      </span>
       </div>
   </header>
 <main class="mdc-top-app-bar--short-fixed-adjust">
   <!--hero-->
-  <section class="" id="hero">
-  <div id="form" class="mdc-card mdc-card--outlined ">
+  <section class="hero">
+  <div class="form mdc-card mdc-card--outlined ">
       <!--call to action-->
       <div class="good-title mdc-card mdc-card__content">
         <h2>Good memories are a click away.</h2>
@@ -36,21 +36,21 @@
         <p>Where to go... where to go...</p>
         <form class="">
           <label for="city">City</label>
-          <input form="city" type="text" id="city" class="mdc-text-field mdc-text-field--filled">
+          <input form="city" type="text" class="city mdc-text-field mdc-text-field--filled">
           <label for="zip" id="zip">Zip code</label>
-          <input type="number" class="mdc-text-field mdc-text-field--filled" maxlength="5">
-          <div id="age-radio">
+          <input type="number" class="zip mdc-text-field mdc-text-field--filled" maxlength="5">
+          <div class="age-radio">
           <p>Are you 21+?</p>
-          <div id="radio-btns">
-            <input type="radio" name="age-confirm" id="age-yes">
+          <div class="radio-btns">
+            <input type="radio" name="age-confirm" class="age-yes">
             <label for="age-yes">Yes</label>
-            <input class="" type="radio" name="age-confirm" id="age-no">
+            <input class="age-no" type="radio" name="age-confirm">
             <label for="age-no">No</label>
           </div>
           </div>
           <label for="event-date">Pick a date:</label>
-          <input for="event-date" id="date" type="date"  class="mdc-text-field">
-          <div id="find-btn">
+          <input for="event-date"s type="date"  class="date mdc-text-field">
+          <div class="find-btn">
           <button type="submit" class="mdc-button mdc-button--raised">Find Event</button>
           </div>
         </div>
@@ -62,7 +62,7 @@
 <div class="mdc-layout-grid">
     <!--find/upcoming event section-->
     <div class="mdc-layout-grid ">
-    <section id="event-list">
+    <section class="event-list">
       <div class="mdc-layout-grid ">
       <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
       </div>
@@ -70,12 +70,12 @@
     </div>
   </div>
     <!--about us section-->
-    <section id="about-us">
+    <section class="about-us">
       <h3 class="mdc-list-group__subheader">Why we do it.</h3>
 
     </section>
     <!--contact  section-->
-    <section id="contact-us">
+    <section class="contact-us">
       <h3 class="mdc-list-group__subheader">Something on your mind? Let us know.</h3>
 
     </section>
