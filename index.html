@@ -51,7 +51,7 @@
           <label for="event-date">Pick a date:</label>
           <input for="event-date"s type="date"  class="date mdc-text-field">
           <div class="find-btn">
-          <button type="submit" class="mdc-button mdc-button--raised">Find Event</button>
+          <button type="submit" id="find-btn"class="mdc-button mdc-button--raised">Find Event</button>
           </div>
         </div>
         </div>
@@ -61,26 +61,43 @@
 </main>
 <div class="mdc-layout-grid">
     <!--find/upcoming event section-->
-    <div class="mdc-layout-grid ">
-    <section class="event-list">
-      <div class="mdc-layout-grid ">
-      <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
+  <div class="mdc-layout-grid">
+    <section id="event-list" class="event-list">
+      <div class="mdc-layout-grid">
+        <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-3">
+            <p>Event Name:</p>
+            <img src="https://via.placeholder.com/150x150" alt="">
+          </div>
+          <div class="mdc-layout-grid__cell--span-5">
+            <p id="event-date">Date:</p>
+            <p id="event-time">Time:</p>
+            <p id="event-des">Description:</p>
+          </div>
+          <div class="mdc-layout-grid__cell--span-3">
+            <p>Adress:</p>
+            <img src="https://via.placeholder.com/150x150" alt="">
+          </div>
+        </div>
       </div>
     </section>
-    </div>
+  </div>
   </div>
     <!--about us section-->
-    <section class="about-us">
-      <h3 class="mdc-list-group__subheader">Why we do it.</h3>
+    <div class="mdc-layout-grid">
+     <section class="about-us">
+      <div class="mdc-layout-grid__inner">
+        <div class="mission mdc-layout-grid__cell--span-5">
+          <h3 class="mdc-list-group__subheader">Why we do it.</h3>
+          <p class="mission-des">Our Mission</p>
+        </div>
+      </div>  
+    </div>
+      
 
-    </section>
-    <!--contact  section-->
-    <section class="contact-us">
-      <h3 class="mdc-list-group__subheader">Something on your mind? Let us know.</h3>
 
-    </section>
 
-    
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/events.js"></script>

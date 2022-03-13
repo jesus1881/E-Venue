@@ -1,4 +1,4 @@
-@use "@material/list";
+/*@use "@material/list";
 
 @include list.core-styles;
 
@@ -11,7 +11,7 @@
 
 @include icon-button.core-styles;
 
-@use "@material/textfield";
+@use "@material/textfield";*/
 
 main{  
     background-attachment: fixed;
@@ -77,4 +77,9 @@ footer{
     display: inline;
     padding-left: 5px;
     padding-bottom: 5px;
+}
+.mission-des{
+    display: flex;
+    justify-content: center;
+
 }
