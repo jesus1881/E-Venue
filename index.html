@@ -36,20 +36,20 @@
         <p>Where to go... where to go...</p>
         <form class="">
           <label for="city">City</label>
-          <input form="city" type="text" class="city mdc-text-field mdc-text-field--filled">
-          <label for="zip" id="zip">Zip code</label>
-          <input type="number" class="zip mdc-text-field mdc-text-field--filled" maxlength="5">
+          <input id="city" form="city" type="text" class="city mdc-text-field mdc-text-field--filled">
+          <label for="zip">Zip code</label>
+          <input id="zip" type="number" class="zip mdc-text-field mdc-text-field--filled" maxlength="5">
           <div class="age-radio">
           <p>Are you 21+?</p>
           <div class="radio-btns">
-            <input type="radio" name="age-confirm" class="age-yes">
+            <input id="age-yes" type="radio" name="age-confirm" class="age-yes">
             <label for="age-yes">Yes</label>
-            <input class="age-no" type="radio" name="age-confirm">
+            <input id="age-no" class="age-no" type="radio" name="age-confirm">
             <label for="age-no">No</label>
           </div>
           </div>
           <label for="event-date">Pick a date:</label>
-          <input for="event-date"s type="date"  class="date mdc-text-field">
+          <input id="event-date" type="date"  class="date mdc-text-field">
           <div class="find-btn">
           <button type="submit" class="mdc-button mdc-button--raised">Find Event</button>
           </div>
