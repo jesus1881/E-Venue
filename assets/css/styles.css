@@ -1,4 +1,4 @@
-@use "@material/list";
+/*@use "@material/list";
 
 @include list.core-styles;
 
@@ -11,7 +11,7 @@
 
 @include icon-button.core-styles;
 
-@use "@material/textfield";
+@use "@material/textfield";*/
 
 main{  
     background-attachment: fixed;
@@ -78,3 +78,23 @@ footer{
     padding-left: 5px;
     padding-bottom: 5px;
 }
+.mission-des{
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-li{
+    display: block;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 32px;
+}
+.map-event-img{
+    width: 85%;
+}
+.event-name{
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
