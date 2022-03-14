@@ -25,7 +25,7 @@ function getEvents(infoParam) {
       response.json().then(function (data) {
         console.log("response: ", response);
         console.log("data: ", data);
-
+        var objData = {};
         var events = data._embedded.events;
         // var events = config.events.infoExample;
         window.eventsInfo = events
@@ -34,22 +34,22 @@ function getEvents(infoParam) {
           var eventVenueList = events[i]._embedded.venues;
           for (var j=0; j < eventVenueList.length; j++){
             var venueName = eventVenueList[j].name;
-            var venueCity = eventVenueList[j].city;
-            var venueState = eventVenueList[j].state;
+            var venueAddr1 = eventVenueList[j].address.line1;
+            var venueAddr2 = eventVenueList[j].address.line2;
+            var venueCity = eventVenueList[j].city.name;
+            var venueState = eventVenueList[j].state.name;
             var venueUrl = eventVenueList[j].url;
-            console.log(
-              "venueName: ",
-              venueName,
-              "venueCity: ",
-              venueCity,
-              "venueState: ",
-              venueState,
-              "venueUrl: ",
-              venueUrl
-            );
+            console.log("venueName: ", venueName);
+            console.log("venueCity: ", venueCity)
+            console.log("venueAddr1: ", venueAddr1);
+            console.log("venueAddr2: ", venueAddr2)
+            console.log("venueState: ", venueState)
+            console.log("venueUrl: ", venueUrl)
           }
         }
-
+        objData.data = events;
+        infoStorage = objData
+        saveToStorage()
       });
     } else {
       console.log("API failed, incorrect response.")
