@@ -1,0 +1,100 @@
+/*@use "@material/list";
+
+@include list.core-styles;
+
+@use "@material/card";
+
+@include card.core-styles;
+
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+
+@use "@material/textfield";*/
+
+main{  
+    background-attachment: fixed;
+    padding-bottom: 5%;
+    margin: auto;
+    width: 100%;
+    background-image: fixed;
+    background-size: 100% cover;
+    display: flex;
+    justify-content: center;
+};
+
+
+.zip{
+    font-size: 50px;
+}
+
+
+
+h2{
+    font-size: 40px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 30px;
+    padding: 0 0 10px 5px;
+}
+
+.age-no{
+    size-adjust: 10px;
+}
+
+footer{
+    background-color: #6200ee;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.zip, .city{
+   height: 25px; 
+}
+
+.age-radio{
+    display: flex;
+}
+
+.radio-btns{
+    padding: 15px 0 0 15pxs;
+}
+
+.date{
+    height: 28px;
+}
+
+.find-btn{
+    display: inline;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.mission-des{
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-li{
+    display: block;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 32px;
+}
+.map-event-img{
+    width: 85%;
+}
+.event-name{
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
