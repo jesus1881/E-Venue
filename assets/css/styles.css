@@ -83,3 +83,18 @@ footer{
     justify-content: center;
 
 }
+
+.header-li{
+    display: block;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 32px;
+}
+.map-event-img{
+    width: 85%;
+}
+.event-name{
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+

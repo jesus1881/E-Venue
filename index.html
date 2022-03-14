@@ -42,16 +42,16 @@
           <div class="age-radio">
           <p>Are you 21+?</p>
           <div class="radio-btns">
-            <input type="radio" name="age-confirm" class="age-yes">
+            <input type="radio" value="yes" name="age-confirm" class="age-yes">
             <label for="age-yes">Yes</label>
-            <input class="age-no" type="radio" name="age-confirm">
+            <input class="age-no" value="no" type="radio" name="age-confirm">
             <label for="age-no">No</label>
           </div>
           </div>
           <label for="event-date">Pick a date:</label>
           <input for="event-date"s type="date"  class="date mdc-text-field">
           <div class="find-btn">
-          <button type="submit" id="find-btn"class="mdc-button mdc-button--raised">Find Event</button>
+          <button type="submit" id="find-btn" class="mdc-button mdc-button--raised">Find Event</button>
           </div>
         </div>
         </div>
@@ -61,55 +61,50 @@
 </main> 
 <!--find/upcoming event section-->
 <div class="mdc-layout-grid">
-  <div class="mdc-layout-grid">
+  <h3 class="header-li mdc-list-group__subheader">Here's whats going on around you.</h3>
+  <div class="mdc-layout-grid mdc-card">
     <section id="event-list" class="event-list">
-      <div class="mdc-layout-grid">
-        <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-3">
-            <p>Event Name:</p>
-            <img src="https://via.placeholder.com/150x150" alt="">
+      <div class="mdc-layout-grid"> 
+        <h4 id="event-name" class="event-name mdc-list-group__subheader" href="">Event Name</h4>
+        <div class="mdc-layout-grid__inner"> 
+          <div class="mdc-layout-grid__cell--span-3">  
+            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
           </div>
-          <div class="mdc-layout-grid__cell--span-5">
+          <div class="mdc-layout-grid__cell--span-6">
             <p id="event-date">Date:</p>
             <p id="event-time">Time:</p>
+            <p id="price">$</p>
             <p id="event-des">Description:</p>
           </div>
-          <div class="mdc-layout-grid__cell--span-3">
-            <p>Adress:</p>
-            <img src="https://via.placeholder.com/150x150" alt="">
+          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
           </div>
         </div>
       </div>
     </section>
   </div>
-  
-  <div class="mdc-layout-grid">
-    <div class="mdc-layout-grid">
-      <section id="event-list" class="event-list">
-        <div class="mdc-layout-grid">
-          <h3 class="mdc-list-group__subheader">Here's whats going on around you.</h3>
-          <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-3">
-              <p>Event Name:</p>
-              <img src="https://via.placeholder.com/150x150" alt="">
-            </div>
-            <div class="mdc-layout-grid__cell--span-5">
-              <p id="event-date">Date:</p>
-              <p id="event-time">Time:</p>
-              <p id="event-des">Description:</p>
-            </div>
-            <div class="mdc-layout-grid__cell--span-3">
-              <p>Adress:</p>
-              <img src="https://via.placeholder.com/150x150" alt="">
-            </div>
+
+  <div class="mdc-layout-grid mdc-card">
+    <section id="event-list" class="event-list">
+      <div class="mdc-layout-grid"> 
+        <h4 id="event-name" class="event-name mdc-list-group__subheader"> <a href="">Event Name</a></h4>
+        <div class="mdc-layout-grid__inner"> 
+          <div class="mdc-layout-grid__cell--span-3">  
+            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+          </div>
+          <div class="mdc-layout-grid__cell--span-6">
+            <p id="event-date">Date:</p>
+            <p id="event-time">Time:</p>
+            <p id="price">$</p>
+            <p id="event-des">Description:</p>
+          </div>
+          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
           </div>
         </div>
-      </section>
-    </div>
-
-
-
+      </div>
+    </section>
+  </div>
 
 
   </div>
