@@ -14,7 +14,7 @@ eventSubmit.addEventListener("click", function (e) {
 
 // Returns back to main and uses local storage to store results from api.
 
-
+//TODO: Render info storage from events.js
 function displayInfo(infoData){
   console.log("infoData: ", infoData)
 }
