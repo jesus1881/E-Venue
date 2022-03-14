@@ -18,14 +18,13 @@ function getEvents(infoParam) {
   }
   apiUrl = apiUrl + `&apikey=${config.events.ticketMaster.TEMP_KEY}`
 
-  console.log("apiUrl: ", apiUrl)
+  // console.log("apiUrl: ", apiUrl)
 
   fetch(apiUrl).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
         console.log("response: ", response);
         console.log("data: ", data);
-        var objData = {};
         var events = data._embedded.events;
         // var events = config.events.infoExample;
         // window.eventsInfo = events
@@ -33,12 +32,12 @@ function getEvents(infoParam) {
           console.log("events[i]: ", events[i])
           var eventVenueList = events[i]._embedded.venues;
           for (var j=0; j < eventVenueList.length; j++){
-            var venueName = eventVenueList[j].name;
-            var venueAddr1 = eventVenueList[j].address.line1;
-            var venueAddr2 = eventVenueList[j].address.line2;
-            var venueCity = eventVenueList[j].city.name;
-            var venueState = eventVenueList[j].state.name;
-            var venueUrl = eventVenueList[j].url;
+            // var venueName = eventVenueList[j].name;
+            // var venueAddr1 = eventVenueList[j].address.line1;
+            // var venueAddr2 = eventVenueList[j].address.line2;
+            // var venueCity = eventVenueList[j].city.name;
+            // var venueState = eventVenueList[j].state.name;
+            // var venueUrl = eventVenueList[j].url;
             var longitude = eventVenueList[j].location.longitude;
             var latitude = eventVenueList[j].location.latitude;
 
@@ -51,9 +50,9 @@ function getEvents(infoParam) {
             // console.log("venueUrl: ", venueUrl)
           }
         }
-        objData.data = events;
-        infoStorage = objData;
+        infoStorage.data = events;
         saveToStorage()
+        displayInfo(infoStorage)
       });
     } else {
       console.log("API failed, incorrect response.")
