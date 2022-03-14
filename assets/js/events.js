@@ -28,7 +28,7 @@ function getEvents(infoParam) {
         var objData = {};
         var events = data._embedded.events;
         // var events = config.events.infoExample;
-        window.eventsInfo = events
+        // window.eventsInfo = events
         for(var i = 0; i < events.length; i++){
           console.log("events[i]: ", events[i])
           var eventVenueList = events[i]._embedded.venues;
@@ -39,16 +39,20 @@ function getEvents(infoParam) {
             var venueCity = eventVenueList[j].city.name;
             var venueState = eventVenueList[j].state.name;
             var venueUrl = eventVenueList[j].url;
-            console.log("venueName: ", venueName);
-            console.log("venueCity: ", venueCity)
-            console.log("venueAddr1: ", venueAddr1);
-            console.log("venueAddr2: ", venueAddr2)
-            console.log("venueState: ", venueState)
-            console.log("venueUrl: ", venueUrl)
+            var longitude = eventVenueList[j].location.longitude;
+            var latitude = eventVenueList[j].location.latitude;
+
+            eventVenueList[j].location.imgUrl = getMaps("19", latitude, longitude);
+            // console.log("venueName: ", venueName);
+            // console.log("venueCity: ", venueCity)
+            // console.log("venueAddr1: ", venueAddr1);
+            // console.log("venueAddr2: ", venueAddr2)
+            // console.log("venueState: ", venueState)
+            // console.log("venueUrl: ", venueUrl)
           }
         }
         objData.data = events;
-        infoStorage = objData
+        infoStorage = objData;
         saveToStorage()
       });
     } else {
