@@ -18,38 +18,41 @@ function getEvents(infoParam) {
   }
   apiUrl = apiUrl + `&apikey=${config.events.ticketMaster.TEMP_KEY}`
 
-  console.log("apiUrl: ", apiUrl)
+  // console.log("apiUrl: ", apiUrl)
 
   fetch(apiUrl).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
         console.log("response: ", response);
         console.log("data: ", data);
-
         var events = data._embedded.events;
         // var events = config.events.infoExample;
-        window.eventsInfo = events
+        // window.eventsInfo = events
         for(var i = 0; i < events.length; i++){
           console.log("events[i]: ", events[i])
           var eventVenueList = events[i]._embedded.venues;
           for (var j=0; j < eventVenueList.length; j++){
-            var venueName = eventVenueList[j].name;
-            var venueCity = eventVenueList[j].city;
-            var venueState = eventVenueList[j].state;
-            var venueUrl = eventVenueList[j].url;
-            console.log(
-              "venueName: ",
-              venueName,
-              "venueCity: ",
-              venueCity,
-              "venueState: ",
-              venueState,
-              "venueUrl: ",
-              venueUrl
-            );
+            // var venueName = eventVenueList[j].name;
+            // var venueAddr1 = eventVenueList[j].address.line1;
+            // var venueAddr2 = eventVenueList[j].address.line2;
+            // var venueCity = eventVenueList[j].city.name;
+            // var venueState = eventVenueList[j].state.name;
+            // var venueUrl = eventVenueList[j].url;
+            var longitude = eventVenueList[j].location.longitude;
+            var latitude = eventVenueList[j].location.latitude;
+
+            eventVenueList[j].location.imgUrl = getMaps("19", latitude, longitude);
+            // console.log("venueName: ", venueName);
+            // console.log("venueCity: ", venueCity)
+            // console.log("venueAddr1: ", venueAddr1);
+            // console.log("venueAddr2: ", venueAddr2)
+            // console.log("venueState: ", venueState)
+            // console.log("venueUrl: ", venueUrl)
           }
         }
-
+        infoStorage.data = events;
+        saveToStorage()
+        displayInfo(infoStorage)
       });
     } else {
       console.log("API failed, incorrect response.")

@@ -9,101 +9,125 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/reset.css"/>
-  <title> E-Venue</title>
+  <title>E-Venue</title>
   </head>
 
   <body>
   <!--navigation-->
-  <header class="mdc-top-app-bar">
+  <header class="nav-bar mdc-top-app-bar mdc-top-app-bar--short ">
     <div class="mdc-top-app-bar__row">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-        <span class="mdc-top-app-bar__title">E-Venue</span>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
-        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-      </section>
-    </div>
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+     <span  class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center">
+      <h1 class="title mdc-top-app-bar__title">E-Venue</h1>
+     </span>
+      </div>
   </header>
- 
+<main class="mdc-top-app-bar--short-fixed-adjust">
   <!--hero-->
-  
-    <section class="hero">
+  <section class="hero">
+  <div class="form mdc-card mdc-card--outlined ">
       <!--call to action-->
-
-      <div class="">
+      <div class="good-title mdc-card mdc-card__content">
         <h2>Good memories are a click away.</h2>
         <p>Check out what's going on around you.</p>
       </div>
-      <div>
+      <div class="mdc-card mdc-card__content">
         <h2>Find Your next event!</h2>
         <p>Where to go... where to go...</p>
-        <form>
-          <label for="country">Country</label>
-          <input type="text" for="country" class="">
-
+        <form class="">
           <label for="city">City</label>
-          <input form="city" type="text" id="city" class="">
-  
-          <label for="zip" id="zip">Zip code</label>
-          <input for="zip" id="zip" type="number" class="" maxlength="5">
-          
-          <label for="event-date">Pick a date:</label>
-          <input for="event-date" id="date" type="date" class="">
-        </form>
-
-        <form>
+          <input id="city" form="city" type="text" class="city mdc-text-field mdc-text-field--filled">
+          <label for="zip">Zip code</label>
+          <input id="zip" type="number" class="zip mdc-text-field mdc-text-field--filled" maxlength="5">
+          <div class="age-radio">
           <p>Are you 21+?</p>
-          <span class="">
-            <input type="radio" name="age-confirm" id="age-yes">
+          <div class="radio-btns">
+            <input type="radio" value="yes" name="age-confirm" class="age-yes">
             <label for="age-yes">Yes</label>
-          </span>
-          <span class="">
-            <input type="radio" name="age-confirm" id="age-no">
+            <input class="age-no" value="no" type="radio" name="age-confirm">
             <label for="age-no">No</label>
-          </span>
-          <br>
-         
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Contained Button</span>
-          </button>
-        </form>
-        
+          </div>
+          </div>
+          <label for="event-date">Pick a date:</label>
+          <input id="event-date" type="date"  class="date mdc-text-field">
+          <div class="find-btn">
+          <button type="submit" id="find-btn" class="mdc-button mdc-button--raised">Find Event</button>
+          </div>
+        </div>
+        </div>
+      </form>
+  </div>
+</section>
+</main> 
+<!--find/upcoming event section-->
+<div class="mdc-layout-grid">
+  <h3 class="header-li mdc-list-group__subheader">Here's whats going on around you.</h3>
+  <div class="mdc-layout-grid mdc-card">
+    <section id="event-list" class="event-list">
+      <div class="mdc-layout-grid"> 
+        <h4 id="event-name" class="event-name mdc-list-group__subheader" href="">Event Name</h4>
+        <div class="mdc-layout-grid__inner"> 
+          <div class="mdc-layout-grid__cell--span-3">  
+            <img class="map-event-img mdc-card__content" id="venue-image" src="https://via.placeholder.com/150x150" alt="">
+          </div>
+          <div class="mdc-layout-grid__cell--span-6">
+            <p id="event-date">Date:</p>
+            <p id="event-time">Time:</p>
+            <p id="price">$</p>
+            <p id="event-des">Description:</p>
+          </div>
+          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+            <img class="map-event-img mdc-card__content"  id="map-image" src="https://via.placeholder.com/150x150" alt="">
+          </div>
+        </div>
       </div>
     </section>
+  </div>
 
-  <main>
-    <!--find/upcoming event section-->
-    <section id="event-list">
-      <div>
-      <h3>Here's whats going on around you.</h3>
+  <div class="mdc-layout-grid mdc-card">
+    <section id="event-list" class="event-list">
+      <div class="mdc-layout-grid"> 
+        <h4 id="event-name" class="event-name mdc-list-group__subheader"> <a href="">Event Name</a></h4>
+        <div class="mdc-layout-grid__inner"> 
+          <div class="mdc-layout-grid__cell--span-3">  
+            <img class="map-event-img mdc-card__content" id="venue-image2"  src="https://via.placeholder.com/150x150" alt="">
+          </div>
+          <div class="mdc-layout-grid__cell--span-6">
+            <p id="event-date">Date:</p>
+            <p id="event-time">Time:</p>
+            <p id="price">$</p>
+            <p id="event-des">Description:</p>
+          </div>
+          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+            <img class="map-event-img mdc-card__content" id="map-image"src="https://via.placeholder.com/150x150" alt="">
+          </div>
+        </div>
       </div>
     </section>
+  </div>
 
+
+  </div>
     <!--about us section-->
-    <section id="about-us">
-      <h3>Why we do it.</h3>
+    <div class="mdc-layout-grid">
+     <section class="about-us">
+      <div class="mdc-layout-grid__inner">
+        <div class="mission mdc-layout-grid__cell--span-5">
+          <h3 class="mdc-list-group__subheader">Why we do it.</h3>
+          <p class="mission-des">Our Mission</p>
+        </div>
+      </div>  
+    </div>
+      
 
-    </section>
-    <!--contact  section-->
-    <section id="contact-us">
-      <h3>Something on your mind? Let us know.</h3>
 
-    </section>
-
-  <div id="main"></div>
-  <div id="form"></div>
-  <div id="pets"></div>
-  <div id="map"></div>
-  </main>
-  
-  <footer>&copy; 2022 Event Match Co. </footer>
 
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/map.js"></script>
   <script src="./assets/js/events.js"></script>
   <script src="./assets/js/form.js"></script>
   <script src="./assets/js/main.js"></script>
+
+  <footer>&copy; 2022 Event Match Co. </footer>
 </body>
 </html>
