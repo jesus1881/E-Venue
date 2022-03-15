@@ -17,6 +17,39 @@ eventSubmit.addEventListener("click", function (e) {
 //TODO: Render info storage from events.js
 function displayInfo(infoData){
   console.log("infoData: ", infoData)
+
+
+  var wid;
+//Venue Image rendering for Image 1 to load on HTML
+  for (let i = 0; i < infoData.data[0].images.length; i++) {
+    if (infoData.data[0].images[i].width >= 600 && infoData.data[0].images[i].width <= 1000){
+      wid = i
+    } else wid = 0
+    
+  }
+
+  document.getElementById("venue-image").setAttribute("src", infoData.data[0].images[wid].url);
+
+  //Map Image rendering for Image 1 to load on HTML
+  /*for (let i = 0; i < infoData.data[0].images.length; i++) {
+    if (infoData.data[0].images[i].width >= 600 && infoData.data[0].images[i].width <= 1000){
+      wid = i
+    } else wid = 0
+    
+  }
+
+  document.getElementById("map-image").setAttribute("src", infoData.data[0].images[wid].url);*/
+//Venue Image rendering for Image 2 to load on HTML
+  for (let i = 0; i < infoData.data[1].images.length; i++) {
+    if (infoData.data[1].images[i].width >= 600 && infoData.data[1].images[i].width <= 1000){
+      wid = i
+    } else wid = 0
+    
+  }
+
+  document.getElementById("venue-image2").setAttribute("src", infoData.data[1].images[wid].url);
+  
+
 }
 
 
