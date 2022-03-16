@@ -4,29 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/css/reset.css"/>
+  
   <title>E-Venue</title>
-  </head>
+</head>
 
-  <body>
-  <!--navigation-->
-  <header class="nav-bar mdc-top-app-bar mdc-top-app-bar--short ">
-    <div class="mdc-top-app-bar__row">
-      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+<body>
+<!--navigation-->
+<header class="nav-bar mdc-top-app-bar mdc-top-app-bar--short ">
+  <div class="mdc-top-app-bar__row">
+    <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
     <span  class="mdc-top-app-bar__section mdc-top-app-bar__section--align-center">
       <h1 class="title mdc-top-app-bar__title">E-Venue</h1>
     </span>
-      </div>
-  </header>
+  </div>
+</header>
 <main class="mdc-top-app-bar--short-fixed-adjust">
   <!--hero-->
   <section class="hero">
-  <div class="form mdc-card mdc-card--outlined ">
-      <!--call to action-->
+    <div class="form mdc-card mdc-card--outlined ">
+        <!--call to action-->
       <div class="good-title mdc-card mdc-card__content">
         <h2>Good memories are a click away.</h2>
         <p>Check out what's going on around you.</p>
@@ -40,106 +41,78 @@
           <label for="zip">Zip code</label>
           <input id="zip" type="number" class="zip mdc-text-field mdc-text-field--filled" maxlength="5">
           <div class="age-radio">
-          <p>Are you 21+?</p>
-          <div class="radio-btns">
-            <input type="radio" value="yes" id="age-yes" name="age-confirm" class="age-yes">
-            <label for="age-yes">Yes</label>
-            <input class="age-no" value="no" id="age-no" type="radio" name="age-confirm">
-            <label for="age-no">No</label>
-          </div>
+            <p>Are you 21+?</p>
+            <div class="radio-btns">
+              <input type="radio" value="yes" id="age-yes" name="age-confirm" class="age-yes">
+              <label for="age-yes">Yes</label>
+              <input class="age-no" value="no" id="age-no" type="radio" name="age-confirm">
+              <label for="age-no">No</label>
+            </div>
           </div>
           <label for="event-date">Pick a date:</label>
           <input id="event-date" type="date"  class="date mdc-text-field">
           <div class="find-btn">
-          <button type="submit" id="find-btn" class="mdc-button mdc-button--raised">Find Event</button>
+            <button type="submit" id="find-btn" class="mdc-button mdc-button--raised">Find Event</button>
           </div>
-        </div>
-        </div>
-      </form>
-  </div>
-</section>
+        </form>
+      </div>
+    </div>
+  </section>
 </main> 
 <!--find/upcoming event section-->
-<div class="mdc-layout-grid">
-  <h3 class="header-li mdc-list-group__subheader">Here's whats going on around you.</h3>
-  <div class="mdc-layout-grid mdc-card">
-    <ul class="event-list">
-      <li class="mdc-layout-grid"> 
-        <h4 class="event-name mdc-list-group__subheader" href="">Event Name</h4>
-        <div class="mdc-layout-grid__inner"> 
-          <div class="mdc-layout-grid__cell--span-3">  
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+  <div class="mdc-layout-grid">
+    <h3 class="header-li mdc-list-group__subheader">Here's whats going on around you.</h3>
+    <div class="mdc-layout-grid mdc-card">
+      <ul class="event-list">
+        <li class="mdc-layout-grid"> 
+          <h4 class="event-name mdc-list-group__subheader" href="">Event Name</h4>
+          <div class="mdc-layout-grid__inner"> 
+            <div class="mdc-layout-grid__cell--span-3">  
+              <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <p class="event-date">Date:</p>
+              <p class="event-time">Time:</p>
+              <p class="price">$</p>
+              <p class="event-des">Description:</p>
+            </div>
+            <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+              <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+            </div>
           </div>
-          <div class="mdc-layout-grid__cell--span-6">
-            <p class="event-date">Date:</p>
-            <p class="event-time">Time:</p>
-            <p class="price">$</p>
-            <p class="event-des">Description:</p>
+        </li>
+        <li class="mdc-layout-grid"> 
+          <h4 class="event-name mdc-list-group__subheader" href="">Event Name</h4>
+          <div class="mdc-layout-grid__inner"> 
+            <div class="mdc-layout-grid__cell--span-3">  
+              <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <p class="event-date">Date:</p>
+              <p class="event-time">Time:</p>
+              <p class="price">$</p>
+              <p class="event-des">Description:</p>
+            </div>
+            <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
+              <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
+            </div>
           </div>
-          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
-          </div>
-        </div>
-      </li>
-      <li class="mdc-layout-grid"> 
-        <h4 class="event-name mdc-list-group__subheader" href="">Event Name</h4>
-        <div class="mdc-layout-grid__inner"> 
-          <div class="mdc-layout-grid__cell--span-3">  
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
-          </div>
-          <div class="mdc-layout-grid__cell--span-6">
-            <p class="event-date">Date:</p>
-            <p class="event-time">Time:</p>
-            <p class="price">$</p>
-            <p class="event-des">Description:</p>
-          </div>
-          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
-          </div>
-        </div>
-      </li>
-
-
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="mdc-layout-grid mdc-card">
-    <ul class="event-list">
-      <li class="mdc-layout-grid"> 
-        <h4 class="event-name mdc-list-group__subheader"> <a href="">Event Name</a></h4>
-        <div class="mdc-layout-grid__inner"> 
-          <div class="mdc-layout-grid__cell--span-3">  
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
-          </div>
-          <div class="mdc-layout-grid__cell--span-6">
-            <p class="event-date">Date:</p>
-            <p class="event-time">Time:</p>
-            <p class="price">$</p>
-            <p class="event-des">Description:</p>
-          </div>
-          <div class="mdc-card__media--square mdc-layout-grid__cell--span-3">
-            <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-
-  </div>
-    <!--about us section-->
-    <div class="mdc-layout-grid">
+<!--about us section-->
+  <div class="mdc-layout-grid">
     <section class="about-us">
       <div class="mdc-layout-grid__inner">
         <div class="mission mdc-layout-grid__cell--span-5">
           <h3 class="mdc-list-group__subheader">Why we do it.</h3>
           <p class="mission-des">Our Mission</p>
         </div>
-      </div>  
-    </div>
-      
-
-
+      </div>
+    </section>
+  </div>
 
   <script src="./assets/js/config.js"></script>
   <script src="./assets/js/map.js"></script>
