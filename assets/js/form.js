@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-var country = document.getElementById('country');
-var city = document.getElementById('city');
-var zip = document.getElementById('zip');
-=======
 function eventForm(){
   var city = document.getElementById("city").value;
   var zip = document.getElementById("zip").value;
@@ -25,4 +20,3 @@ function eventForm(){
   }
   getEvents(formObj)
 }
->>>>>>> caee7dcab146fa95656c02568b4de939ae0fbd8a
