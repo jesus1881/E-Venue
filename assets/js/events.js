@@ -7,7 +7,7 @@ function getEvents(infoParam) {
 
   var apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?size=${resultSize}`;
 
-  var acceptedKeys = ["keyword", "city", "stateCode", "countryCode", "startDateTime"];
+  var acceptedKeys = ["keyword", "city", "stateCode", "postalCode", "startDateTime"];
   for(var key in infoParam){
     if(acceptedKeys.includes(key)){
       console.log("Accepted key: ", key)

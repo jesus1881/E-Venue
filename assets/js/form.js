@@ -14,7 +14,7 @@ function eventForm(){
     keyword: "",
     city: city,
     stateCode: "",
-    countryCode: zip,
+    postalCode: zip,
     startDateTime: startDateTime,
     ageAbove: ageAbove
   }
