@@ -9,8 +9,9 @@ function getEvents(infoParam) {
 
   var acceptedKeys = ["keyword", "city", "stateCode", "postalCode", "startDateTime"];
   for(var key in infoParam){
-    if(acceptedKeys.includes(key)){
+    if(acceptedKeys.includes(key) && infoParam.key !== undefined){
       console.log("Accepted key: ", key)
+      console.log(`Accepted ${key}: `, infoParam.key)
       apiUrl = apiUrl + `&${key}=${infoParam[key]}`
     } else {
       console.log("Invalid key for events query.")
