@@ -24,15 +24,8 @@ main{
     justify-content: center;
 };
 
-
-.zip{
+.zip {
     font-size: 50px;
-}
-
-
-
-h2{
-    font-size: 40px;
 }
 
 .hero{
@@ -40,22 +33,36 @@ h2{
     justify-content: center;
 }
 
+form {
+    width: 40%;
+}
+
 .title{
     font-size: 30px;
     padding: 0 0 10px 5px;
 }
 
-.age-no{
-    size-adjust: 10px;
+.good-title h2 {
+    font-size: 40px;
+    font-style: italic;
 }
 
-footer{
-    background-color: #6200ee;
-    display: flex;
-    justify-content: right;
+h3 {
+    font-size: 25px;
+}
+
+.hero p {
+    margin: 5px 0 15px 0;
 }
 
 
+.mdc-card {
+    background-color: rgba(38, 0, 93, 0.4);
+}
+.mdc-card--outlined {
+    padding: 10px;
+    margin-top: 10px;
+}
 
 .zip, .city{
    height: 25px; 
@@ -66,8 +73,13 @@ footer{
 }
 
 .radio-btns{
-    padding: 15px 0 0 15pxs;
+    padding: 15px 0 0 15px;
 }
+
+.age-no{
+    size-adjust: 10px;
+}
+
 
 .date{
     height: 28px;
@@ -98,3 +110,8 @@ footer{
     font-size: 24px;
 }
 
+footer{
+    background-color: #6200ee;
+    display: flex;
+    justify-content: right;
+}
