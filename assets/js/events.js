@@ -3,20 +3,24 @@ function getEvents(infoParam) {
   // var keywordQuery = `&keyword=${keyword}`;
   // var cityQuery = `&city=${city}`;
 
-  console.log("getEvents arguments: ", arguments);
+  // console.log("getEvents arguments: ", arguments);
 
   var apiUrl = `https://app.ticketmaster.com/discovery/v2/events.json?size=${resultSize}`;
 
   var acceptedKeys = ["keyword", "city", "stateCode", "postalCode", "startDateTime"];
   for(var key in infoParam){
-    if(acceptedKeys.includes(key) && infoParam.key !== undefined){
-      console.log("Accepted key: ", key)
-      console.log(`Accepted ${key}: `, infoParam.key)
+    // console.log("loop key:", key);
+    // console.log("acceptedKeys.includes(key):", acceptedKeys.includes(key));
+    // console.log("infoParam.key !== undefined:", infoParam.key !== undefined);
+    if(acceptedKeys.includes(key) && infoParam[key] !== undefined){
+      // console.log("Accepted key: ", key)
+      // console.log(`Accepted ${key}: `, infoParam.key)
       apiUrl = apiUrl + `&${key}=${infoParam[key]}`
     } else {
       console.log("Invalid key for events query.")
     }
   }
+  // console.log("getEvents apiUrl: ", apiUrl);
   apiUrl = apiUrl + `&apikey=${config.events.ticketMaster.TEMP_KEY}`
 
   // console.log("apiUrl: ", apiUrl)
