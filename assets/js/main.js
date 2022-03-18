@@ -11,7 +11,7 @@ eventSubmit.addEventListener("click", function (e) {
   eventForm();
 });
 
-
+displayInfo(infoStorage)
 // Returns back to main and uses local storage to store results from api.
 
 //TODO: Render info storage from events.js
@@ -19,6 +19,8 @@ function displayInfo(infoData){
   console.log("infoData: ", infoData)
   var wid;
   var imageSelected;
+  var listEli = document.getElementsByClassName("event-list")[0];
+  listEli.innerHTML = ""
 //Venue Image rendering for Image 1 to load on HTML
 for (let i = 0; i < infoData.data.length; i++) {
   imageSelected = false
@@ -27,16 +29,16 @@ for (let i = 0; i < infoData.data.length; i++) {
       wid = j
       imageSelected = true 
         let cityInfoHTML = `
-        <li class="mdc-layout-grid"> 
+        <li class="mdc-layout-grid mdc-card"> 
           <h4 class="event-name mdc-list-group__subheader" href="">${infoData.data[i].name}</h4>
           <div class="mdc-layout-grid__inner"> 
             <div class="mdc-layout-grid__cell--span-3">  
               <img class="map-event-img mdc-card__content" src="${infoData.data[i].images[j].url}" alt="${infoData.data[i].name}">
             </div>
             <div class="mdc-layout-grid__cell--span-6">
-              <p class="event-date">${infoData.data[i].dates.start}</p>
-              <p class="event-time">${infoData.data[i].dates.start.localTime}</p>
-              <p class="price">Min:$${infoData.data[i].priceRanges[0].min}
+              <p class="event-date">Date: ${infoData.data[i].dates.start.localDate}</p>
+              <p class="event-time">Time: ${infoData.data[i].dates.start.localTime}</p>
+              <p class="price">Min: $${infoData.data[i].priceRanges[0].min},
               max:$${infoData.data[i].priceRanges[0].max}</p>
               <p class="event-des">${infoData.data[i].info}</p>
             </div>
@@ -45,7 +47,6 @@ for (let i = 0; i < infoData.data.length; i++) {
             </div>
           </div>
         </li>`
-        var listEli = document.getElementsByClassName("event-list")[0];
         listEli.insertAdjacentHTML('beforeend',cityInfoHTML)
     }
   }

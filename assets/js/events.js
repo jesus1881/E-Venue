@@ -42,7 +42,7 @@ function getEvents(infoParam) {
             var longitude = eventVenueList[j].location.longitude;
             var latitude = eventVenueList[j].location.latitude;
 
-            eventVenueList[j].location.imgUrl = getMaps("19", latitude, longitude);
+            eventVenueList[j].location.imgUrl = getMaps("16", latitude, longitude);
             // console.log("venueName: ", venueName);
             // console.log("venueCity: ", venueCity)
             // console.log("venueAddr1: ", venueAddr1);
