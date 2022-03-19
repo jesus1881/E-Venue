@@ -103,15 +103,28 @@ h3 {
     font-size: 32px;
 }
 .map-event-img{
+    border-radius: 14%;
+    border: solid #6200ee;
     width: 100%;
 }
 .event-name{
-    padding-bottom: 5px;
+    padding: 13px;
     font-size: 24px;
+    background-color: #6200ee;
+    color: white;
 }
 
 footer{
     background-color: #6200ee;
     display: flex;
     justify-content: right;
+}
+
+li.mdc-card{
+    margin-bottom: 2%;
+}
+
+.event-info{
+    line-height: 2rem;
+    font-family: Roboto, sans-serif;
 }
