@@ -54,11 +54,8 @@ for (let i = 0; i < infoData.data.length; i++) {
         imageEle= `
         <img class="map-event-img mdc-card__content" src="${infoData.data[i].images[j].url}" alt="${infoData.data[i].name}">`
       }
-      var nameEle = ""
-      if("name" in infoData.data[i]){
-        nameEle= `
-          <h4 class="event-name mdc-list-group__subheader" href="">${infoData.data[i].name}</h4>`
-      }
+      var nameEle = `
+          <h4 class="event-name mdc-list-group__subheader"><a href="${infoData.data[i].url}">${infoData.data[i].name}</a></h4>`
       let cityInfoHTML = `
         <li class="mdc-layout-grid mdc-card"> 
           ${nameEle}
