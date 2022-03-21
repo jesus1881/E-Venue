@@ -25,17 +25,17 @@
 </header>
 <main class="mdc-top-app-bar--short-fixed-adjust">
   <!--hero-->
-  <section class="hero">
-    <div class="form mdc-card mdc-card--outlined ">
+  <section class="hero mdc-layout-grid">
+    <div class="mdc-card mdc-card--outlined mdc-layout-grid__inner">
         <!--call to action-->
-      <div class="good-title mdc-card mdc-card__content">
+      <div class="good-title mdc-card mdc-card__content mdc-layout-grid__cell--span-7">
         <h2>Good memories are a click away.</h2>
         <p>Check out what's going on around you.</p>
       </div>
-      <div class="mdc-card mdc-card__content">
+      <div class="form-header mdc-card mdc-card__content mdc-layout-grid__cell--span-5">
         <h3>Find Your next event!</h3>
         <p>Where to go... where to go...</p>
-        <form class="">
+        <form class="form">
           <label for="city">City</label>
           <input id="city" form="city" type="text" placeholder="City" class="city mdc-text-field mdc-text-field--filled">
           <br/>
@@ -53,7 +53,7 @@
           <label for="event-date">Pick a date:</label>
           <input id="event-date" type="date"  class="date mdc-text-field">
           <div class="find-btn">
-            <button type="submit" id="find-btn" class="mdc-button mdc-button--raised">Find Event</button>
+            <button type="submit" id="find-btn" class="find-btn mdc-button mdc-button--raised">Find Event</button>
           </div>
         </form>
       </div>
@@ -65,13 +65,13 @@
     <h3 class="header-li mdc-list-group__subheader">Here's whats going on around you.</h3>
     <div class="mdc-layout-grid mdc-card">
       <ul class="event-list">
-        <!-- <li class="mdc-layout-grid"> 
-          <h4 class="event-name mdc-list-group__subheader" href="">Event Name</h4>
+        <!--<li class="mdc-layout-grid"> 
+          <h4 class="event-name mdc-list-group__subheader mdc-card__content mdc-card__media--16-9" href="">Event Name</h4>
           <div class="mdc-layout-grid__inner"> 
             <div class="mdc-layout-grid__cell--span-3">  
               <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
             </div>
-            <div class="mdc-layout-grid__cell--span-6">
+            <div class="event-info mdc-layout-grid__cell--span-6">
               <p class="event-date">Date:</p>
               <p class="event-time">Time:</p>
               <p class="price">$</p>
@@ -88,7 +88,7 @@
             <div class="mdc-layout-grid__cell--span-3">  
               <img class="map-event-img mdc-card__content" src="https://via.placeholder.com/150x150" alt="">
             </div>
-            <div class="mdc-layout-grid__cell--span-6">
+            <div class="event-info mdc-layout-grid__cell--span-6 mdc-card">
               <p class="event-date">Date:</p>
               <p class="event-time">Time:</p>
               <p class="price">$</p>
@@ -105,11 +105,11 @@
 
 <!--about us section-->
   <div class="mdc-layout-grid">
-    <section class="about-us">
+    <section class="about-us mdc-card">
       <div class="mdc-layout-grid__inner">
-        <div class="mission mdc-layout-grid__cell--span-5">
+        <div class="mission mdc-card mdc-layout-grid__cell--span-12">
           <h3 class="mdc-list-group__subheader">Why we do it.</h3>
-          <p class="mission-des">Our Mission</p>
+          <p class="mission-des">E-Venue was founded for event goers to find an event nearby and the cost going to attend. We want to improve the experience by dedicating our time to helping event attendees find a nearby venue along with events and their prices.</p>
         </div>
       </div>
     </section>
