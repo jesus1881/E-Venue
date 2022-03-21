@@ -34,9 +34,9 @@
 
 ## Screenshots 
 * API key for ticketmaster parameters and if key to find accepted keys for a specific area.
-*Maps API key using template literals to configure the parameters.
-*HTML reference tags for different sources.
-*HTML Material style utilized in the Navigation Bar
+* Maps API key using template literals to configure the parameters.
+* HTML reference tags for different sources.
+* HTML Material style utilized in the Navigation Bar
 
 
 ## Contributors
