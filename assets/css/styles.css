@@ -13,6 +13,10 @@
 
 @use "@material/textfield";*/
 
+*{
+    font-family: Roboto, sans-serif;
+}
+
 main{  
     background-attachment: fixed;
     padding-bottom: 5%;
@@ -33,8 +37,18 @@ main{
     justify-content: center;
 }
 
+.form-header{
+    border: #6200ee solid;
+    border-radius: 12px;
+}
+
+.form-header, h3, p{
+    padding: 2px 0px 0px 2px;
+}
+
 form {
     width: 40%;
+    padding-left: 10px;
 }
 
 .title{
@@ -42,9 +56,21 @@ form {
     padding: 0 0 10px 5px;
 }
 
+.good-title{
+    background-image: url(https://media-exp1.licdn.com/dms/image/C561BAQE-51J-8KkMZg/company-background_10000/0/1548357920228?e=2147483647&v=beta&t=wrOVYN8qrGon9jILrMQv78FsyOV4IMQxr_3UjYtUREI);
+    background-size: cover;
+    border: solid #6200ee; 
+    border-radius: 12px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
 .good-title h2 {
     font-size: 40px;
     font-style: italic;
+    padding-bottom: 3%;
 }
 
 h3 {
@@ -86,9 +112,7 @@ h3 {
 }
 
 .find-btn{
-    display: inline;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    margin: 6px 0px 6px 0px;
 }
 .mission-des{
     display: flex;
@@ -100,7 +124,7 @@ h3 {
     display: block;
     text-align: center;
     padding-bottom: 3%;
-    font-size: 32px;
+    font-size: 40px;
 }
 .map-event-img{
     border-radius: 14%;
@@ -112,19 +136,37 @@ h3 {
     font-size: 24px;
     background-color: #6200ee;
     color: white;
+    border-radius: 12px;
 }
 
 footer{
     background-color: #6200ee;
-    display: flex;
-    justify-content: right;
+    display: block;
+    text-align: right;
+    padding: 10px 5px 0px 0px;
 }
 
 li.mdc-card{
     margin-bottom: 2%;
+    border: solid #6200ee;
+    line-height: 2rem;
+    font-family: Roboto, sans-serif;
+    border-radius: 12px;
 }
 
 .event-info{
-    line-height: 2rem;
-    font-family: Roboto, sans-serif;
+    padding: 11px 0px 0px 11px;
+    border: solid 3px #7624b1;
+}
+
+.about-us h3{
+    background-color: #6200ee;
+    color: white;
+    font-size: 24px;
+}
+
+.mission-des{
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 30px;
 }
