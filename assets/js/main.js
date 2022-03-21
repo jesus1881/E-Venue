@@ -21,7 +21,7 @@ function displayInfo(infoData){
   var imageSelected;
   var listEle = document.getElementsByClassName("event-list")[0];
   listEle.innerHTML = ""
-//Venue Image rendering for Image 1 to load on HTML
+//Venue Image rendering on an array.
 for (let i = 0; i < infoData.data.length; i++) {
   imageSelected = false
   for (let j = 0; j < infoData.data[i].images.length; j++) {
@@ -36,6 +36,7 @@ for (let i = 0; i < infoData.data.length; i++) {
       }
       var dateEle = ""
       var timeEle = ""
+      // Use if statement to ensure data is not showing undefined on Webpage
       if("dates" in infoData.data[i]){ 
         if("localTime" in infoData.data[i].dates.start){
           timeEle = `
@@ -74,37 +75,14 @@ for (let i = 0; i < infoData.data.length; i++) {
             </div>
           </div>
         </li>`
+      //Append data to HTML
       listEle.insertAdjacentHTML('beforeend',cityInfoHTML)
     }
   }
 }
-  //Map Image rendering for Image 1 to load on HTML
-  /*for (let i = 0; i < infoData.data[0].images.length; i++) {
-    if (infoData.data[0].images[i].width >= 600 && infoData.data[0].images[i].width <= 1000){
-      wid = i
-    } else wid = 0
-    
-  }*/
-
-/* document.getElementById("map-image").setAttribute("src", infoData.data[0].images[wid].url);*/
-  
-/*var imageSelected = false
-//Venue Image rendering for Image 2 to load on HTML
-  for (let i = 0; i < infoData.data.length; i++) {
-    for (let j = 0; j < infoData.data[i].images.length; j++) {
-      if (infoData.data[i].images[j].ratio === "4_3" &&imageSelected===false){
-        wid = j
-        imageSelected = true 
-      }
-    }
-  }
-  
-  document.getElementById("venue-image2").setAttribute("src", infoData.data[i].images[wid].url);*/
-  
-
 }
 
-
+//Adding event data to local storage to ensure that refreshing or closing tabs can still pull relevant information.
 function getStorage(storageItem) {
   var storageData = JSON.parse(localStorage.getItem(storageItem));
   if (storageData === null) {

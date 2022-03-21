@@ -4,7 +4,7 @@ function eventForm(){
   var startDateTime = document.getElementById("event-date").value;
   var ageAbove = "";
   var ageInput = document.getElementsByName("age-confirm");
-
+//For loop to find the age input for the functionality of the button
   for (var i = 0; i < ageInput.length; i++) {
     if (ageInput[i].checked) {
       ageAbove = ageInput[i].value;
