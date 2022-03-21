@@ -16,7 +16,7 @@ displayInfo(infoStorage)
 
 //TODO: Render info storage from events.js
 function displayInfo(infoData){
-  console.log("infoData: ", infoData)
+  // console.log("infoData: ", infoData)
   var wid;
   var imageSelected;
   var listEle = document.getElementsByClassName("event-list")[0];

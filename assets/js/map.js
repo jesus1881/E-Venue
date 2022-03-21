@@ -1,7 +1,7 @@
 function getMaps(zoom, latitude, longitude){
 
    // var cityQuery = `&center=${,}`;
-    console.log("getMaps arguments", arguments);
+    // console.log("getMaps arguments", arguments);
 //Zoom should default at 19
 if (zoom >= 20){
     zoom = 19

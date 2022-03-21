@@ -19,7 +19,7 @@
 
 main{  
     background-attachment: fixed;
-    padding-bottom: 5%;
+    padding-bottom: 2rem;
     margin: auto;
     width: 100%;
     background-image: fixed;
@@ -130,8 +130,22 @@ h3 {
     border-radius: 14%;
     border: solid #6200ee;
     width: 100%;
+    height: unset;
 }
 .event-name{
+    padding: 13px;
+    font-size: 24px;
+    background-color: #6200ee;
+    color: white;
+    border-radius: 12px;
+}
+
+
+.event-name a{
+    color: white;
+}
+
+.about_header{
     padding: 13px;
     font-size: 24px;
     background-color: #6200ee;
@@ -142,8 +156,9 @@ h3 {
 footer{
     background-color: #6200ee;
     display: block;
-    text-align: right;
-    padding: 10px 5px 0px 0px;
+    text-align: center;
+    padding: 1rem 0px 1rem 0px;
+    color: white;
 }
 
 li.mdc-card{

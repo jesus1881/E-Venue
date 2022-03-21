@@ -24,7 +24,7 @@ function getEvents(infoParam) {
         // var events = config.events.infoExample;
         // window.eventsInfo = events
         for(var i = 0; i < events.length; i++){
-          console.log("events[i]: ", events[i])
+          // console.log("events[i]: ", events[i])
           var eventVenueList = events[i]._embedded.venues;
           for (var j=0; j < eventVenueList.length; j++){
             var longitude = eventVenueList[j].location.longitude;
@@ -38,7 +38,7 @@ function getEvents(infoParam) {
       });
     } else {
       console.log("API failed, incorrect response.")
-      console.log("response: ", response);
+      // console.log("response: ", response);
     }
   });
 
