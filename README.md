@@ -7,7 +7,13 @@
 </div>
 
 ## A page to help find events happening nearby.
-[Link](https://jesus1881.github.io/E-Venue/) to the deployed page 
+[Click here to the deployed page.](https://jesus1881.github.io/E-Venue/)
+
+
+<div style="align='center'">
+ <img src="./assets/images/event-click-away.jfif" width="75%" alt="Site image of E-Venue">
+</div>
+
 # Table of contents
 1. [Technologies used](#tech-used)
 2. [Features](#features)
@@ -34,9 +40,21 @@
 
 ## Screenshots 
 * API key for ticketmaster parameters and if key to find accepted keys for a specific area.
+<div style="align='center'">
+ <img src="./assets/images/APIscreenshot.png" width="50%" alt="API key for ticketmaster parameters and if key to find accepted keys for a specific area.">
+</div>
 * Maps API key using template literals to configure the parameters.
+<div style="align='center'">
+ <img src="./assets/images/map_API_screenshot.png" width="50%" alt="Maps API key using template literals to configure the parameters.">
+</div>
 * HTML reference tags for different sources.
+<div style="align='center'">
+ <img src="./assets/images/HTMLHead_references.png" width="50%" alt="HTML reference tags for different sources.">
+</div>
 * HTML Material style utilized in the Navigation Bar
+<div style="align='center'">
+ <img src="./assets/images/Navbar_use_of_Material.png" width="50%" alt="HTML Material style utilized in the Navigation Bar">
+</div>
 
 
 ## Contributors
